@@ -1,0 +1,248 @@
+/* CSS:BASE-START */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.7;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: #7dd3fc;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #f1f5f9;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3px;
+    background-color: #0ea5e9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* CSS:BASE-END */
+
+/* CSS:NAV-START */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #0f172aee;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #1e293b;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.875rem 1.25rem;
+}
+
+.nav-brand {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #38bdf8;
+}
+
+/* CSS:NAV-END */
+
+/* CSS:HERO-START */
+.section-hero {
+    padding: 5rem 0 4rem;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f8fafc;
+    margin: 0 0 1rem;
+    line-height: 1.3;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: #94a3b8;
+    margin: 0 0 1.5rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-note {
+    font-size: 0.8125rem;
+    color: #475569;
+    border: 1px dashed #334155;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS:HERO-END */
+
+/* CSS:ABOUT-START */
+.section-about {
+    background-color: #1e293b;
+}
+
+.about-placeholder-img {
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CSS:ABOUT-END */
+
+/* CSS:SKILLS-START */
+.section-skills {
+    background-color: #0f172a;
+}
+
+/* CSS:SKILLS-END */
+
+/* CSS:PROJECTS-START */
+.section-projects {
+    background-color: #1e293b;
+}
+
+/* CSS:PROJECTS-END */
+
+/* CSS:CONTACT-START */
+.section-contact {
+    background-color: #0f172a;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.75rem;
+}
+
+/* CSS:CONTACT-END */
+
+/* CSS:FOOTER-START */
+.site-footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.8125rem;
+    color: #475569;
+    border-top: 1px solid #1e293b;
+}
+
+/* CSS:FOOTER-END */
+
+/* CSS:RWD-START */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        padding: 5rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        gap: 1.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+/* CSS:RWD-END */

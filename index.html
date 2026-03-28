@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; max-width: 100%; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif; line-height: 1.6; }
-    img { max-width: 100%; height: auto; display: block; }
-    .container { width: 1920px; margin: 0 auto; padding: 16px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .col-12 { grid-column: span 12; }
-    @media (min-width: 768px) { .col-md-6 { grid-column: span 6; } }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-  </style>
+  <title>Andylo · Frontend Dev ｜ 前端工程師個人品牌網站</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <header class="container" role="banner">
-    <nav aria-label="主選單">
-      <a href="#about">關於我</a>
-      <a href="#projects">作品集</a>
-      <a href="https://example.com/blog">技術部落格</a>
-      <a href="mailto:me@example.com">聯絡我</a>
-    </nav>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <p>歡迎來到我的個人網站！這裡整理了學習紀錄、Side Project 與實作心得。</p>
-  </header>
 
-  <footer class="container" role="contentinfo">
-    <p>© 2025 My Portfolio · <a href="#">GitHub</a></p>
-    <img src="https://source.unsplash.com/600x200/?technology,abstract" alt="">
-  </footer>
+<body>
+  <div class="page">
+
+    <header class="site-header">
+      <nav class="nav container">
+        <span class="nav-brand">Andylo · Frontend Dev</span>
+        <div class="nav-links">
+          <a class="nav-link" href="#hero">首頁</a>
+          <a class="nav-link" href="#about">關於我</a>
+          <a class="nav-link" href="#skills">技能</a>
+          <a class="nav-link" href="#projects">作品集</a>
+          <a class="nav-link" href="#contact">聯絡我</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- SECTION:HERO-START -->
+      <section id="hero" class="section section-hero">
+        <div class="container">
+          <h1 class="hero-title">嗨，我是Andylo，是一位前端工程師</h1>
+          <p class="hero-subtitle">這裡是主視覺區（Hero），未來會放上一句話自我介紹、核心職稱，以及行動呼籲按鈕（例如「瀏覽作品集」、「下載履歷」）。</p>
+          <p class="hero-subtitle">專注於打造流暢、易用且具美感的網頁體驗。</p>
+          <p class="hero-note">📌 開發者提示：之後會用 Section SDD 的 Prompt 產生正式文案與版面，請把新的 section 程式碼整段貼在 SECTION:HERO-START 與
+            SECTION:HERO-END 兩個註解中間，完全取代現在這一區。</p>
+        </div>
+      </section>
+      <!-- SECTION:HERO-END -->
+
+      <!-- SECTION:ABOUT-START -->
+      <section id="about" class="section section-about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading" class="section-title">關於我</h2>
+          <img class="about-placeholder-img"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop&q=80"
+            alt="在筆電前撰寫程式碼的開發者工作桌面" loading="lazy">
+          <p>這裡目前是 About 區的占位內容。未來會介紹個人背景、工作經驗、學習歷程，以及對前端開發的熱忱與理念。</p>
+          <p>📌 開發者提示：之後會用 Section SDD 的 Prompt 產生正式內容，請把新的 section 程式碼整段貼在 SECTION:ABOUT-START 與 SECTION:ABOUT-END
+            兩個註解中間，完全取代現在這一區。</p>
+        </div>
+      </section>
+      <!-- SECTION:ABOUT-END -->
+
+      <!-- SECTION:SKILLS-START -->
+      <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading" class="section-title">技能</h2>
+          <p>這裡目前是 Skills 區的占位內容。未來會列出前端開發相關的技術能力，例如 HTML、CSS、JavaScript、React、Vue 等框架與工具。</p>
+          <p>📌 開發者提示：之後會用 Section SDD 的 Prompt 產生正式內容，請把新的 section 程式碼整段貼在 SECTION:SKILLS-START 與 SECTION:SKILLS-END
+            兩個註解中間，完全取代現在這一區。</p>
+        </div>
+      </section>
+      <!-- SECTION:SKILLS-END -->
+
+      <!-- SECTION:PROJECTS-START -->
+      <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading" class="section-title">作品集</h2>
+          <p>這裡目前是 Projects 區的占位內容。未來會展示個人專案或工作作品，包含截圖、技術說明與連結。</p>
+          <p>📌 開發者提示：之後會用 Section SDD 的 Prompt 產生正式內容，請把新的 section 程式碼整段貼在 SECTION:PROJECTS-START 與
+            SECTION:PROJECTS-END 兩個註解中間，完全取代現在這一區。</p>
+        </div>
+      </section>
+      <!-- SECTION:PROJECTS-END -->
+
+      <!-- SECTION:CONTACT-START -->
+      <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="section-title">聯絡我</h2>
+          <p>歡迎透過以下方式聯繫我，無論是合作邀約、技術交流或單純打聲招呼都歡迎。</p>
+          <ul class="contact-list">
+            <li>📧 Email：<a href="mailto:hello@yuchen.dev">hello@yuchen.dev</a></li>
+            <li>🐙 GitHub：<a href="https://github.com/yuchen-lin" target="_blank"
+                rel="noopener noreferrer">github.com/yuchen-lin</a></li>
+            <li>💼 LinkedIn：<a href="https://www.linkedin.com/in/yuchen-lin" target="_blank"
+                rel="noopener noreferrer">linkedin.com/in/yuchen-lin</a></li>
+          </ul>
+          <p>📌 開發者提示：之後會用 Section SDD 的 Prompt 產生正式內容，請把新的 section 程式碼整段貼在 SECTION:CONTACT-START 與 SECTION:CONTACT-END
+            兩個註解中間，完全取代現在這一區。</p>
+        </div>
+      </section>
+      <!-- SECTION:CONTACT-END -->
+
+    </main>
+    <footer class="container" role="contentinfo">
+      <p>© 2025 My Portfolio · <a href="#">GitHub</a></p>
+      <img src="https://source.unsplash.com/600x200/?technology,abstract" alt="">
+    </footer>
+  </div>
 </body>
+
 </html>
